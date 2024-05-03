@@ -9,6 +9,15 @@ screen.tracer(0)
 
 tim = TurtlePlayer()
 
-screen.update()
+screen.listen()
+screen.onkey(key="Up", fun=tim.move_forward)
+screen.onkey(key="Down", fun=tim.move_backward)
+
+game_is_on = True
+while game_is_on:
+    screen.update()
+
+    if tim.ycor() > 280:
+        print("You won")
 
 screen.exitonclick()
