@@ -17,4 +17,5 @@ class TurtlePlayer(Turtle):
         self.forward(20)
 
     def move_backward(self):
-        self.backward(20)
+        if self.ycor() > -260:
+            self.backward(20)

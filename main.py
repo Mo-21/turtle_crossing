@@ -17,7 +17,7 @@ game_is_on = True
 while game_is_on:
     screen.update()
 
-    if tim.ycor() > 280:
+    if tim.ycor() > 260:
         print("You won")
 
 screen.exitonclick()
