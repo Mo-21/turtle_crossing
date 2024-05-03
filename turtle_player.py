@@ -12,6 +12,7 @@ class TurtlePlayer(Turtle):
         self.color("white")
         self.penup()
         self.setheading(90)
+        self.goto(x=0, y=-265)
 
     def move_forward(self):
         self.forward(20)
